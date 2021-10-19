@@ -16,13 +16,11 @@ class PokemonList extends Component {
   }
 
   render() {
-    console.log(this.state.types);
+    const types = this.state.types;
     return (
       <div>
-        {this.state.types ? (
-          this.state.types.map((type, index) => (
-            <h1 key={index}>{type.name}</h1>
-          ))
+        {types ? (
+          types.map((type, index) => <h1 key={index}>{type.name}</h1>)
         ) : (
           <h1>Loading...</h1>
         )}
