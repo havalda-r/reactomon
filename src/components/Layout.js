@@ -1,10 +1,10 @@
 import React from 'react';
 
-const layout = () => {
+const layout = (props) => {
   return (
     <div>
       <header>HEADER</header>
-      <main>MAIN</main>
+      <main>{props.children}</main>
       <footer>FOOTER</footer>
     </div>
   );
