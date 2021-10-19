@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router';
 import './App.css';
 import Layout from './components/Layout/Layout';
 import PokemonList from './components/PokemonList/PokemonList';
+import PokemonDetail from './components/PokemonDetail/PokemonDetail';
 
 class App extends Component {
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
               <Route
                 path='/pokemons/:pokemonId'
                 exact
-                render={() => <h1>PokémonDetail component placeholder</h1>}
+                component={PokemonDetail}
               />
               <Route
                 path='/types'
