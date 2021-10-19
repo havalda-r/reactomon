@@ -5,7 +5,7 @@ import './App.css';
 import Layout from './components/Layout/Layout';
 import PokemonList from './components/PokemonList/PokemonList';
 import PokemonDetail from './components/PokemonDetail/PokemonDetail';
-
+import TypeList from './components/TypeList/TypeList';
 class App extends Component {
   render() {
     return (
@@ -19,11 +19,7 @@ class App extends Component {
                 exact
                 component={PokemonDetail}
               />
-              <Route
-                path='/types'
-                exact
-                render={() => <h1>TypeList component placeholder</h1>}
-              />
+              <Route path='/types' exact component={TypeList} />
               <Route
                 path='/'
                 exact
