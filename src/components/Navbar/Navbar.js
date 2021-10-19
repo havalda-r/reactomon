@@ -1,10 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const navbar = () => {
   return (
     <div>
-      <button>Pokémons</button>
-      <button>Types</button>
+      <button>
+        <Link to='/pokemons'>Pokémons</Link>
+      </button>
+
+      <button>
+        <Link to='/types'>Types</Link>
+      </button>
     </div>
   );
 };
