@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PokemonListItem from './PokemonListItem/PokemonListItem';
 
 class PokemonList extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class PokemonList extends Component {
     return (
       <div>
         {this.state.pokemons.map((pokemon) => (
-          <h1>{pokemon.name}</h1>
+          <PokemonListItem name={pokemon.name} />
         ))}
       </div>
     );
