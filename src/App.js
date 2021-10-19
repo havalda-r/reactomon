@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router';
 import './App.css';
 import Layout from './components/Layout/Layout';
+import PokemonList from './components/PokemonList/PokemonList';
 
 class App extends Component {
   render() {
@@ -11,11 +12,7 @@ class App extends Component {
         <div className='App'>
           <Layout>
             <Switch>
-              <Route
-                path='/pokemons'
-                exact
-                render={() => <h1>PokémonList component placeholder</h1>}
-              />
+              <Route path='/pokemons' exact component={PokemonList} />
               <Route
                 path='/pokemons/:pokemonId'
                 exact
