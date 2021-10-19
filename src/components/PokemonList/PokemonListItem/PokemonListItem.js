@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class PokemonListItem extends Component {
   constructor(props) {
@@ -14,7 +15,11 @@ class PokemonListItem extends Component {
       .then((response) => this.setState({ pokemon: response.data }));
   }
   render() {
-    return <h1>{this.props.name}</h1>;
+    return this.state.pokemon ? (
+      <h1>
+        <Link to={`pokemons/${this.state.pokemon.id}`}>{this.props.name}</Link>
+      </h1>
+    ) : null;
   }
 }
 
