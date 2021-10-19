@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router';
 import './App.css';
 import Layout from './components/Layout/Layout';
 
@@ -9,7 +10,23 @@ class App extends Component {
       <BrowserRouter>
         <div className='App'>
           <Layout>
-            <main>MAIN CONTENT</main>
+            <Switch>
+              <Route
+                path='/pokemons'
+                exact
+                render={() => <h1>PokémonList component placeholder</h1>}
+              />
+              <Route
+                path='/types'
+                exact
+                render={() => <h1>TypeList component placeholder</h1>}
+              />
+              <Route
+                path='/'
+                exact
+                render={() => <h1>Home page placeholder</h1>}
+              />
+            </Switch>
           </Layout>
         </div>
       </BrowserRouter>
