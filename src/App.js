@@ -17,6 +17,11 @@ class App extends Component {
                 render={() => <h1>PokémonList component placeholder</h1>}
               />
               <Route
+                path='/pokemons/:pokemonId'
+                exact
+                render={() => <h1>PokémonDetail component placeholder</h1>}
+              />
+              <Route
                 path='/types'
                 exact
                 render={() => <h1>TypeList component placeholder</h1>}
