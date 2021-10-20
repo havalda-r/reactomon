@@ -1,11 +1,11 @@
 import React from 'react';
-
 import Navbar from '../Navbar/Navbar';
+import logo from '../../assets/logo.png';
 
 const header = () => {
   return (
     <header>
-      <div>LOGO</div>
+      <img src={logo} alt='logo' style={{ width: '25%' }} />
       <Navbar />
     </header>
   );
