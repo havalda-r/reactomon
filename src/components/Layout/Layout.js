@@ -8,10 +8,11 @@ const layout = (props) => {
         display: 'flex',
         flexDirection: 'column',
         minHeight: '100vh',
+        height: '100%',
       }}
     >
       <Header style={{ flex: '1' }} />
-      <main style={{ flex: '1', background: 'red', height: 'auto' }}>
+      <main style={{ flex: '1', background: '#c4ebf1', height: 'auto' }}>
         {props.children}
       </main>
       <footer
