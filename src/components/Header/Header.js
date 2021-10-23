@@ -4,8 +4,14 @@ import logo from '../../assets/logo.png';
 
 const header = () => {
   return (
-    <header>
-      <img src={logo} alt='logo' style={{ width: '25%' }} />
+    <header
+      style={{
+        position: 'sticky',
+        top: '0',
+        background: 'black',
+      }}
+    >
+      <img src={logo} alt='logo' style={{ width: '20%' }} />
       <Navbar />
     </header>
   );
