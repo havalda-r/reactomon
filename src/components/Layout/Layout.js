@@ -17,15 +17,19 @@ const layout = (props) => {
       </main>
       <footer
         style={{
+          color: 'white',
           position: 'sticky',
           marginTop: 'auto',
           bottom: '0',
-          padding: '2em',
           width: 'auto',
-          background: 'green',
+          borderTop: '3px solid black',
+          background: '#d10000',
         }}
       >
-        FOOTER
+        <p>
+          &copy; 2021 Reactomon | All rights reserved | Terms of Service |
+          Privacy
+        </p>
       </footer>
     </div>
   );
