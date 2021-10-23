@@ -16,7 +16,15 @@ class PokemonListItem extends Component {
   }
   render() {
     return this.state.pokemon ? (
-      <h1>
+      <h1
+        style={{
+          display: 'inline-block',
+          width: '20%',
+          margin: '10px',
+          height: 'auto',
+          background: '#ce8888',
+        }}
+      >
         <Link to={`pokemons/${this.state.pokemon.id}`}>{this.props.name}</Link>
       </h1>
     ) : null;

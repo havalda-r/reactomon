@@ -10,8 +10,10 @@ const layout = (props) => {
         minHeight: '100vh',
       }}
     >
-      <Header />
-      <main>{props.children}</main>
+      <Header style={{ flex: '1' }} />
+      <main style={{ flex: '1', background: 'red', height: 'auto' }}>
+        {props.children}
+      </main>
       <footer
         style={{
           position: 'sticky',
