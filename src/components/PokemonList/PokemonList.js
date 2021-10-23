@@ -18,7 +18,15 @@ class PokemonList extends Component {
 
   render() {
     return (
-      <div>
+      <div
+        style={{
+          backgroundColor: '#ffff80',
+          border: '5px solid black',
+          borderRadius: '25px',
+          margin: '2%',
+          padding: '2%',
+        }}
+      >
         {this.state.pokemons.map((pokemon, index) => (
           <PokemonListItem url={pokemon.url} name={pokemon.name} key={index} />
         ))}
