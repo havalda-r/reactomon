@@ -18,12 +18,23 @@ class PokemonList extends Component {
   render() {
     const types = this.state.types;
     return (
-      <div>
-        {types ? (
-          types.map((type, index) => <h1 key={index}>{type.name}</h1>)
-        ) : (
-          <h1>Loading...</h1>
-        )}
+      <div
+        style={{
+          backgroundColor: '#ffff80',
+          border: '5px solid black',
+          borderRadius: '25px',
+          margin: '2%',
+          padding: '2%',
+        }}
+      >
+        <h1>Pokémon types:</h1>
+        <ul>
+          {types ? (
+            types.map((type, index) => <li key={index}>{type.name}</li>)
+          ) : (
+            <h1>Loading...</h1>
+          )}
+        </ul>
       </div>
     );
   }
