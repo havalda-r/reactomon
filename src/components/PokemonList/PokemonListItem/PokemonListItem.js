@@ -24,12 +24,14 @@ class PokemonListItem extends Component {
             margin: '10px',
             display: 'inline-block',
             width: '150px',
-            margin: '10px',
             height: '150px',
             background: '#fcb103',
           }}
         >
-          <img src={this.state.pokemon.sprites.front_default} />
+          <img
+            src={this.state.pokemon.sprites.front_default}
+            alt={this.state.pokemon.name}
+          />
           <p>{this.props.name}</p>
         </div>
       </Link>

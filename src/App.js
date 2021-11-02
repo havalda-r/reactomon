@@ -23,7 +23,12 @@ class App extends Component {
               <Route
                 path='/'
                 exact
-                render={() => <h1>Home page placeholder</h1>}
+                render={() => (
+                  <div>
+                    <h1>Home page</h1>
+                    <p>This is a basic React app using Pokemon API.</p>
+                  </div>
+                )}
               />
             </Switch>
           </Layout>
